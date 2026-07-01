@@ -77,7 +77,3 @@ coverage.xml
 # ── Debug ──
 debug.log
 pdb_history.txt
-
-# ── Project Files (not for repo) ──
-task.md
-implementation_plan.md
