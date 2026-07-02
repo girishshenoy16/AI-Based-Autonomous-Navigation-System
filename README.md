@@ -509,7 +509,7 @@ A* with Manhattan heuristic explores **87-97% fewer nodes** than Dijkstra while 
 
 1. **A*** **is consistently faster** — heuristic h(n) guides search toward goal, reducing explored nodes
 2. **Both find optimal paths** — same path length on all maps (both are optimal algorithms)
-3. **A* explores fewer nodes** — Manhattan/Euclidean heuristic prunes unnecessary search space
+3. **A*** **explores fewer nodes** — Manhattan/Euclidean heuristic prunes unnecessary search space
 4. **Real-time replanning** — system adapts to dynamic obstacles in < 500ms
 
 ---
