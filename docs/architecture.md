@@ -115,22 +115,30 @@ grid_world.load_map(map_path: str) -> None
 grid_world.load_map_by_index(index: int) -> str
 grid_world.is_wall(col: int, row: int) -> bool
 grid_world.is_free(col: int, row: int) -> bool
+grid_world.set_cell(col: int, row: int, value: int) -> None
 grid_world.add_dynamic_obstacle(col: int, row: int) -> None
+grid_world.remove_dynamic_obstacle(col: int, row: int) -> None
 grid_world.spawn_random_obstacle() -> Optional[Tuple[int, int]]
 grid_world.set_goal(col: int, row: int) -> None
 grid_world.is_path_blocked() -> bool
+grid_world.pixel_to_grid(px: int, py: int) -> Optional[Tuple[int, int]]
 grid_world.render() -> None
 grid_world.capture_frame() -> pygame.Surface
+grid_world.tick() -> int
+grid_world.quit() -> None
+grid_world.clear_overlay() -> None
+grid_world.set_overlay(frontier: set, explored: set, current: Tuple[int, int]) -> None
 ```
 
 ### Agent
 ```python
+agent.reset(start: Tuple[int, int]) -> None
 agent.set_path(path: List[Tuple[int, int]]) -> None
 agent.update(dt: float) -> None
-agent.sense() -> List[SensorReading]
 agent.get_grid_pos() -> Tuple[int, int]
+agent.sense() -> List[SensorReading]
 agent.check_collision() -> bool
-agent.is_near_obstacle(threshold: float) -> bool
+agent.is_near_obstacle(threshold: float = 1.5) -> bool
 agent.draw(surface: pygame.Surface) -> None
 ```
 
@@ -154,17 +162,19 @@ nav.get_status() -> dict
 ### PerceptionModule
 ```python
 perception.toggle() -> bool
-perception.capture(pygame_surface) -> np.ndarray
-perception.process(frame) -> np.ndarray
+perception.capture(pygame_surface: pygame.Surface) -> np.ndarray
+perception.process(frame: np.ndarray = None) -> np.ndarray
 perception.get_detection_centers() -> List[Tuple[int, int]]
-perception.draw(window_name) -> None
+perception.draw(window_name: str = "Perception View") -> None
+perception.save_screenshot(path: str) -> str
+perception.close() -> None
 ```
 
 ### Dashboard
 ```python
 dashboard.update_hud(surface, nav_status, sensor_readings, opencv_active, yolo_active) -> None
 dashboard.record_metrics(run_data: Dict) -> None
-dashboard.save_metrics_csv() -> str
+dashboard.save_metrics_csv(filename: str = None) -> str
 dashboard.generate_path_comparison_chart(astar_data, dijkstra_data) -> str
 dashboard.generate_sensor_chart(sensor_history) -> str
 dashboard.save_screenshot(surface, filename) -> str
