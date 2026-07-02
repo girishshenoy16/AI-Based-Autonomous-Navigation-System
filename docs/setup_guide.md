@@ -108,14 +108,16 @@ python main.py
 
 ## Running Tests
 ```bash
-# Run all 87 tests
-python -m pytest tests/ -v
+# Run all 116 tests
+python -m pytest 
+python -m pytest -v
+python -m pytest -q
 
 # Run specific test file
 python -m pytest tests/test_path_planning.py -v
 
 # Run with coverage
-python -m pytest tests/ -v --tb=short
+python -m pytest -v --tb=short
 ```
 
 ## Keyboard Controls

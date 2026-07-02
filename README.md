@@ -122,7 +122,7 @@ This project builds a complete solution — a virtual autonomous navigation syst
 | **Numerical**        | NumPy       | Array operations, math             |
 | **Visualization**    | Matplotlib  | Charts and analytics               |
 | **Data Analysis**    | Pandas      | Metrics processing                 |
-| **Testing**          | pytest      | Unit testing (87 tests)            |
+| **Testing**          | pytest      | Unit testing (116 tests)           |
 
 ---
 
@@ -207,7 +207,8 @@ AI-Based-Autonomous-Navigation-System/
 │   ├── map_parking_lot.json       # Parking lot
 │   └── map_hospital.json          # Hospital floor plan
 │
-├── tests/                          # 87 unit tests
+├── tests/                          # 116 unit tests
+│   ├── __init__.py      # Empty File
 │   ├── test_path_planning.py      # A*/Dijkstra tests (25 tests)
 │   ├── test_agent.py              # Agent movement/sensors (14 tests)
 │   ├── test_perception.py         # OpenCV module tests (9 tests)
@@ -360,7 +361,6 @@ The project includes **116 unit tests** across 7 test files covering all core mo
 python -m pytest 
 python -m pytest -v
 python -m pytest -q
-python -m pytest tests/ -v
 
 # Run specific module tests
 python -m pytest tests/test_path_planning.py -v
@@ -372,7 +372,7 @@ python -m pytest tests/test_visualization.py -v
 python -m pytest tests/test_yolo_detector.py -v
 
 # Run with summary
-python -m pytest tests/ -v --tb=short
+python -m pytest --tb=short
 ```
 
 ### Test Coverage
@@ -535,7 +535,7 @@ A* with Manhattan heuristic explores **87-97% fewer nodes** than Dijkstra while 
 - **AI/ML**: Path planning algorithms (A* with f(n)=g(n)+h(n), Dijkstra), object detection (YOLOv8)
 - **Computer Vision**: OpenCV contour detection, HSV color filtering, frame processing
 - **Robotics**: 8-direction raycasting sensor simulation, state machines, obstacle avoidance
-- **Software Engineering**: Modular architecture, 87 unit tests, documentation
+- **Software Engineering**: Modular architecture, 116 unit tests, documentation
 
 ### Soft Skills
 - **Problem Solving**: Breaking complex problems into manageable modules

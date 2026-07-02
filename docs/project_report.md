@@ -2,14 +2,25 @@
 
 ## Abstract
 
-This project presents an AI-based autonomous navigation system that enables a virtual agent to navigate from a start point to a goal point in a 2D grid environment. The system implements a complete sense-plan-act pipeline with three-level perception (simulated 8-direction raycasting sensors, OpenCV contour detection, and optional YOLOv8-nano ML detection), dual path planning algorithms (A* and Dijkstra) on an 8-connected grid, and dynamic obstacle avoidance with real-time replanning via a 7-state machine. The simulation runs in Pygame at 60 FPS with interactive controls, a real-time HUD dashboard, CSV metrics export, and Matplotlib comparison charts. Testing across 6 different map environments (Simple, Maze, Warehouse, City Grid, Parking Lot, Hospital) demonstrates 100% navigation success rate. Algorithm comparison shows A* explores 87–97% fewer nodes than Dijkstra while producing identical optimal paths.
+This project presents an AI-based autonomous navigation system that enables a virtual agent to navigate from a start point to a goal point in a 2D grid environment. 
+
+The system implements a complete sense-plan-act pipeline with three-level perception (simulated 8-direction raycasting sensors, OpenCV contour detection, and optional YOLOv8-nano ML detection), 
+dual path planning algorithms (A* and Dijkstra) on an 8-connected grid, and dynamic obstacle avoidance with real-time replanning via a 7-state machine.
+
+The simulation runs in Pygame at 60 FPS with interactive controls, a real-time HUD dashboard, CSV metrics export, and Matplotlib comparison charts. Testing across 6 different map environments 
+(Simple, Maze, Warehouse, City Grid, Parking Lot, Hospital) demonstrates 100% navigation success rate. 
+
+Algorithm comparison shows A* explores 87–97% fewer nodes than Dijkstra while producing identical optimal paths.
 
 ---
 
 ## 1. Introduction
 
 ### 1.1 Problem Statement
-Autonomous navigation is a fundamental challenge in robotics and artificial intelligence. The ability for a robot or vehicle to navigate from point A to point B without human intervention requires integrating perception, planning, and control systems — capabilities critical for self-driving cars, warehouse robots, and delivery drones.
+Autonomous navigation is a fundamental challenge in robotics and artificial intelligence. 
+The ability for a robot or vehicle to navigate from point A to point B without human intervention requires 
+integrating perception, planning, and control systems — capabilities critical for self-driving cars, warehouse 
+robots, and delivery drones.
 
 ### 1.2 Motivation
 - Eliminates need for human operators in navigation tasks
@@ -31,7 +42,7 @@ Autonomous navigation is a fundamental challenge in robotics and artificial inte
 ## 2. Literature Review
 
 ### 2.1 Path Planning Algorithms
-- **A* Algorithm**: Optimal pathfinding using heuristic search (Hart et al., 1968). Uses f(n) = g(n) + h(n) with admissible heuristics to guarantee optimal paths.
+- **A*** **Algorithm**: Optimal pathfinding using heuristic search (Hart et al., 1968). Uses f(n) = g(n) + h(n) with admissible heuristics to guarantee optimal paths.
 - **Dijkstra's Algorithm**: Shortest path in weighted graphs (Dijkstra, 1959). Explores uniformly without heuristics, suitable for all-pairs shortest path problems.
 - **RRT**: Rapidly-exploring Random Trees for high-dimensional spaces (LaValle, 1998).
 
@@ -73,7 +84,7 @@ GridWorld → Agent → Perception → PathPlanner → NavigationController → 
 
 ### 3.3 Development Approach
 - Agile iterative development
-- Test-driven development with 87 unit tests
+- Test-driven development with 116 unit tests
 - Modular design with clean class interfaces
 - Centralized configuration in `config.py`
 
@@ -147,7 +158,9 @@ IDLE → PLANNING → MOVING → AVOIDING → REPLANNING → REACHED
 | Planning Time  | ~1.0 ms  | ~30.4 ms | 96.7% faster        |
 
 ### 5.4 Key Insight
-A* with Manhattan heuristic explores 87–97% fewer nodes than Dijkstra on the same map. Both algorithms produce identical optimal paths (same path length), but A* achieves this with dramatically less computation by using heuristic guidance.
+A* with Manhattan heuristic explores 87–97% fewer nodes than Dijkstra on the same map. 
+Both algorithms produce identical optimal paths (same path length), but A* achieves this with dramatically 
+less computation by using heuristic guidance.
 
 ---
 
@@ -237,7 +250,7 @@ A* with Manhattan heuristic explores 87–97% fewer nodes than Dijkstra on the s
 ## 8. Testing
 
 ### 8.1 Test Coverage
-- **87 unit tests** across 5 test files
+- **116 unit tests** across 7 test files
 - **100% pass rate**
 
 | Test File               | Module Covered                          |
@@ -250,7 +263,9 @@ A* with Manhattan heuristic explores 87–97% fewer nodes than Dijkstra on the s
 
 ### 8.2 Test Framework
 - pytest ≥7.0.0
-- Run with: `python -m pytest tests/ -v`
+- Run with: `python -m pytest`
+- Run with: `python -m pytest -v`
+- Run with: `python -m pytest -q`
 
 ---
 
@@ -282,7 +297,7 @@ This project successfully implements a complete autonomous navigation pipeline w
 - Multi-level perception (simulated raycasting, OpenCV contour detection, YOLOv8-nano ML)
 - Dynamic obstacle avoidance with a 7-state machine and automatic replanning
 - Interactive simulation with 6 map environments and real-time controls
-- 87 unit tests with 100% pass rate
+- 116 unit tests with 100% pass rate
 - Comprehensive documentation, analytics dashboard, and presentation materials
 
 The system demonstrates industry-relevant skills in AI, robotics, computer vision, and software engineering.

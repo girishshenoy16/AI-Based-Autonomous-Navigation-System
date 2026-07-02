@@ -44,14 +44,14 @@ Python 3.11, Pygame ≥2.5, OpenCV ≥4.8, NumPy, Matplotlib, Pandas, YOLOv8-nan
 
 
 ## Testing
-- **87 unit tests** with 100% pass rate
+- **116 unit tests** with 100% pass rate
 - Coverage of simulation, agent, path planning, navigation, and perception modules
 
 ## Project Structure
 ```
 src/          — 8 Python modules (simulation, agent, perception, yolo_detector, path_planning, navigation, visualization, config)
 maps/         — 6 JSON map environments
-tests/        — 87 unit tests across 5 test files
+tests/        — 116 unit tests across 7 test files
 docs/         — 6 documentation files
 notebooks/    — Jupyter analysis notebooks
 outputs/      — captures/, metrics/, models/, plots/
@@ -66,5 +66,5 @@ outputs/      — captures/, metrics/, models/, plots/
 | Drone Navigation     | Delivery/inspection drones       |
 | Healthcare           | Hospital delivery robots         |
 
-## Author
-AI-Based Autonomous Navigation System — Diploma Project
+## Author - Girish Shenoy
+AI-Based Autonomous Navigation System 

@@ -195,12 +195,15 @@ AI-Based Autonomous Navigation System/
 │   ├── map_parking_lot.json
 │   └── map_hospital.json
 │
-├── tests/                     # 87 unit tests
-│   ├── test_simulation.py
-│   ├── test_agent.py
-│   ├── test_path_planning.py
-│   ├── test_navigation.py
-│   └── test_perception.py
+├── tests/                     # 116 unit tests
+│   ├── __init__.py      # Empty File
+│   ├── test_path_planning.py      # A*/Dijkstra tests (25 tests)
+│   ├── test_agent.py              # Agent movement/sensors (14 tests)
+│   ├── test_perception.py         # OpenCV module tests (9 tests)
+│   ├── test_navigation.py         # State machine tests (15 tests)
+│   ├── test_simulation.py         # Grid world tests (24 tests)
+│   ├── test_visualization.py      # Dashboard tests (14 tests)
+│   └── test_yolo_detector.py      # YOLO detector tests (12 tests)
 │
 ├── docs/                      # Documentation
 ├── notebooks/                 # Jupyter notebooks
