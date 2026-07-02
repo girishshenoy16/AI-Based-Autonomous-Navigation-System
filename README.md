@@ -485,7 +485,7 @@ python -m pytest tests/ -v --tb=short
 | Metric                  | Value              |
 |-------------------------|--------------------|
 | Navigation Success Rate | **100%**           |
-| Unit Tests              | **87 (100% pass)** |
+| Unit Tests              | **116 (100% pass)**|
 | Average Planning Time   | **< 5ms**          |
 | Map Environments        | **6**              |
 | Agent Speed             | **6 cells/sec**    |
@@ -507,7 +507,7 @@ A* with Manhattan heuristic explores **87-97% fewer nodes** than Dijkstra while 
 
 ### Key Findings
 
-1. **A* is consistently faster** — heuristic h(n) guides search toward goal, reducing explored nodes
+1. **A*** **is consistently faster** — heuristic h(n) guides search toward goal, reducing explored nodes
 2. **Both find optimal paths** — same path length on all maps (both are optimal algorithms)
 3. **A* explores fewer nodes** — Manhattan/Euclidean heuristic prunes unnecessary search space
 4. **Real-time replanning** — system adapts to dynamic obstacles in < 500ms
@@ -562,7 +562,7 @@ A* with Manhattan heuristic explores **87-97% fewer nodes** than Dijkstra while 
 
 ## 👤 Author
 
-**ABC XYZ**
+**Girish Shenoy**
 
 **Computer Science Graduate | Building intelligent systems that navigate the world autonomously.**
 
