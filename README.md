@@ -111,7 +111,7 @@ This project builds a complete solution — a virtual autonomous navigation syst
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 | Layer                | Technology  | Purpose                            |
 |----------------------|-------------|------------------------------------|
@@ -126,7 +126,7 @@ This project builds a complete solution — a virtual autonomous navigation syst
 
 ---
 
-## 🏗️ Architecture
+## 🏗 Architecture
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
