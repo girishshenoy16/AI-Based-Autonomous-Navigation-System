@@ -260,6 +260,8 @@ less computation by using heuristic guidance.
 | `test_path_planning.py` | A* and Dijkstra algorithms              |
 | `test_navigation.py`    | State machine, replanning logic         |
 | `test_perception.py`    | OpenCV detection pipeline               |
+| `test_visualization.py` | Dashboard, HUD, charts, CSV export      |
+| `test_yolo_detector.py` | YOLOv8 object detection                 |
 
 ### 8.2 Test Framework
 - pytest ≥7.0.0
