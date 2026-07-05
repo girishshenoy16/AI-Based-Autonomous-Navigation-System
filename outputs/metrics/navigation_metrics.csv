@@ -1,0 +1,9 @@
+timestamp,map,algorithm,state,path_length,path_index,nodes_explored,planner_time_ms,total_time_s,replan_count,dynamic_obstacles,opencv_active,yolo_active,sensor_avg
+2026-07-01 17:43:35,Simple,astar,REACHED,38,38,40,0.49,8.71,0,0,False,False,3.55
+2026-07-01 17:43:51,Simple,dijkstra,REACHED,38,38,865,5.15,9.11,0,0,False,False,3.62
+2026-07-01 17:44:22,Simple,astar,REACHED,38,38,40,0.57,21.41,0,0,False,True,3.56
+2026-07-01 17:46:03,Simple,dijkstra,REACHED,38,38,865,6.79,15.86,0,0,False,True,3.57
+2026-07-01 17:47:30,Simple,astar,REACHED,38,38,40,0.52,69.76,0,0,True,True,3.55
+2026-07-01 17:48:57,Simple,dijkstra,REACHED,38,38,865,6.75,74.96,0,0,True,True,3.61
+2026-07-01 17:50:25,Simple,astar,REACHED,38,38,40,0.38,9.59,0,0,True,False,3.56
+2026-07-01 17:50:41,Simple,dijkstra,REACHED,38,38,865,5.18,10.27,0,0,True,False,3.64

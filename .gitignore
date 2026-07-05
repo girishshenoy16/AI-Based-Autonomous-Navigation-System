@@ -34,7 +34,6 @@ ehthumbs.db
 
 # ── Project Outputs ──
 outputs/captures/
-outputs/metrics/
 outputs/plots/astar_exploration.png
 outputs/models/
 
