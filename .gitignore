@@ -77,3 +77,8 @@ coverage.xml
 # ── Debug ──
 debug.log
 pdb_history.txt
+
+# ── Planning Docs ──
+task.md
+implementation_plan.md
+docs/presentation_outline.md
