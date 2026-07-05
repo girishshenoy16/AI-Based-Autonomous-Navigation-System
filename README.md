@@ -269,7 +269,7 @@ AI-Based-Autonomous-Navigation-System/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/AI-Based-Autonomous-Navigation-System.git
+git clone https://github.com/girishshenoy16/AI-Based-Autonomous-Navigation-System.git
 cd AI-Based-Autonomous-Navigation-System
 
 # 2. Create virtual environment
