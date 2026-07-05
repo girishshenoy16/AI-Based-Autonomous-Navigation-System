@@ -243,7 +243,7 @@ less computation by using heuristic guidance.
 - Click-to-place obstacles with real-time replanning
 - Keyboard controls for map/algorithm/perception switching
 - Screenshot capture and metrics export
-- Animated A* exploration visualization
+- Animated A* and Dijkstra exploration visualization
 
 ---
 

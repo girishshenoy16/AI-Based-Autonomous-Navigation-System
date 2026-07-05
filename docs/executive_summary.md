@@ -27,7 +27,7 @@ Complete sense-plan-act pipeline:
 | Interactive Controls | Click-to-place walls, keyboard shortcuts, mouse goal placement      |
 | Real-time Dashboard  | HUD with state, metrics, sensor visualization                       |
 | Analytics            | CSV export, Matplotlib comparison charts, sensor readings over time |
-| Animated A*          | Visual exploration of frontier, explored nodes, and final path      |
+| Animated Exploration   | Visual exploration of frontier, explored nodes, and final path (A* and Dijkstra) |
 
 
 ## Algorithm Performance
