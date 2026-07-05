@@ -232,10 +232,11 @@ AI-Based-Autonomous-Navigation-System/
 │   ├── metrics/                   # CSV navigation metrics
 │   ├── models/                    # YOLOv8 model weights
 │   └── plots/                     # Matplotlib charts
-│       ├── astar_exploration.png                                        
-│       ├── algorithm_comparison.png                    
-│       ├── sensor_readings.png                    
-│       └── path_comparison.png 
+│       ├── astar_exploration.png
+│       ├── dijkstra_exploration.png
+│       ├── algorithm_comparison.png
+│       ├── sensor_readings.png
+│       └── path_comparison.png
 │
 ├── screenshots/                    # Manual README images
 │   ├── dijkstra_opencv.png                                        
@@ -503,6 +504,7 @@ A* with Manhattan heuristic explores **87-97% fewer nodes** than Dijkstra while 
 | Warehouse   | 36       | 858            | **95.8% fewer** |
 | City Grid   | 40       | 865            | **95.4% fewer** |
 | Parking Lot | 36       | 946            | **96.2% fewer** |
+| Hospital    | 41       | 1,015          | **96.0% fewer** |
 
 
 ### Key Findings
@@ -556,7 +558,7 @@ A* with Manhattan heuristic explores **87-97% fewer nodes** than Dijkstra while 
 | [Architecture](docs/architecture.md)                     | System architecture details  |
 | [Algorithms](docs/algorithms.md)                         | A* and Dijkstra explanations |
 | [Setup Guide](docs/setup_guide.md)                       | Step-by-step installation    |
-| [Jupyter Notebook](notebooks/algorithm_comparison.ipynb) | Interactive analysis         |
+| [Jupyter Notebook](notebooks/algorithm_comparison.ipynb) | A*/Dijkstra comparison with exploration visualizations |
 
 ---
 
