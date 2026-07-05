@@ -471,6 +471,12 @@ python -m pytest --tb=short
 ### Algorithm Comparison Chart
 ![Algorithm Comparison](outputs/plots/algorithm_comparison.png)
 
+### A* Exploration Progress
+![A* Exploration](outputs/plots/astar_exploration.png)
+
+### Dijkstra Exploration Progress
+![Dijkstra Exploration](outputs/plots/dijkstra_exploration.png)
+
 ### Path Comparison Chart
 ![Path Comparison](outputs/plots/path_comparison.png)
 
